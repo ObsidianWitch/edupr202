@@ -1,0 +1,101 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel}
+\usepackage{textcomp}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,       	% false: boxed links; true: colored links
+	linkcolor=black,          	% color of internal links
+	urlcolor=blue,           	% color of external links
+	citecolor=blue
+}
+
+\usepackage{listings}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{blue}{rgb}{0,0,0.7}
+\lstset{
+	language=Matlab,
+	basicstyle=\scriptsize,
+	numbers=left,                   % where to put the line-numbers
+  	numberstyle=\tiny\color{gray},
+	commentstyle=\color{dkgreen},
+	frame=single,                   % adds a frame around the code
+ 	rulecolor=\color{black},
+	emph={},
+	emphstyle=\color{mauve},
+	morekeywords={},
+	keywordstyle={\color{blue}},
+	showstringspaces=false,
+  	tabsize=4
+}
+
+\usepackage{framed}
+\definecolor{shadecolor}{rgb}{0.96,0.96,0.96}
+
+\usepackage{dashrule}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{cancel} % diagonal strikeout
+\usepackage[margin=1cm]{caption}
+\usepackage{subcaption}
+\setdescription{leftmargin=1cm,labelindent=0.5cm}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\newcommand\mathd[0]{\mathrm{d}}
+
+\usepackage{blindtext}
+
+\title{PR202 - Rapport \\
+\normalsize{Groupe 3}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\input{introduction.tex}
+\input{theory.tex}
+\input{implementation.tex}
+\input{game.tex}
+\input{conclusion.tex}
+
+\begin{thebibliography}{10}
+\bibitem{cite:pong} Jean Zeid, \emph{Jeux vidéo : de Pong (1972) aux jeux 3D}, \href{http://www.franceinfo.fr/education-jeunesse-jeux-video/jeux-video-de-pong-1972-aux-jeux-3d-439411-2011-11-07}{http://www.franceinfo.fr/education-jeunesse-jeux-video/jeux-video-de-pong-1972-aux-jeux-3d-439411-2011-11-07}
+
+\bibitem{cite:ps2protocol}  Adam Chapweske, \emph{The PS/2 Mouse/Keyboard Protocol}, \href{http://www.computer-engineering.org/ps2protocol/}{http://www.computer-engineering. org/ps2protocol/}
+
+\bibitem{cite:howtvworks} Marshall Brain, \emph{How Television Works}, How stuff works, \href{http://electronics.howstuffworks.com/tv7.htm}{http://electronics.howstuffworks.com/tv7.htm}
+
+\bibitem{cite:simplevga} Dave Vandenbout, \emph{A Simple VGA Interface for the XuLA FPGA Board}, \href{http://devbisme.webfactional.com/blogs/devbisme/2011/06/02/simple-vga-interface-xula-fpga-board}{http://devbisme.webfactional.com/blogs/devbisme/2011/06/02/simple-vga-interface-xula-fpga-board}
+
+\bibitem{cite:timingsvga} \emph{VGA Signal 640 x 480 @ 60 Hz Industry standard timing} , TinyVGA, \href{http://tinyvga.com/vga-timing/640x480@60Hz}{http://tinyvga.com/vga-timing/640x480@60Hz}
+
+\bibitem{cite:psocvga} Mac A. Cody, \emph{Driving A VGA Display With A Cypress PSoC}, \href{http://home.roadrunner.com/~maccody/PSoC/VGA/PSoC\_VGA\_Driver.html}{http://home.roadrunner.com/~maccody/PSoC/VGA/PSoC\_VGA\_Driver.html}
+
+\bibitem{cite:vgapinout} \emph{VGA Pinout} \href{http://www.teletechsvc.net/pinouts/db15-vga-pinout.html}{http://www.teletechsvc.net/pinouts/db15-vga-pinout.html}
+
+\bibitem{cite:scan} Bryan Ackland, \emph{Lab 3: VGA Bouncing Ball I}, \href{http://personal.stevens.edu/~backland/Courses/Course487\_Spring_13\_files/Labs/Lab3.pdf}{http://personal.stevens.edu/~backland/Courses/Course487\_Spring\_13\_files/Labs/Lab3.pdf}
+
+\bibitem{cite:rommatlab} \emph{Sprites in Block ROM}, \href{http://www.lbebooks.com/downloads/exportal/VHDL\_NEXYS\_Example24.pdf}{http://www.lbebooks.com/downloads/exportal/VHDL\_NEXYS\_Example24.pdf}
+
+\bibitem{cite:vgaplus256kit} \emph{VGAplus256 Kit}, \href{http://propellerpowered.us/index.php?route=product/product\&product\_id=62}
+{http://propellerpowered.us/index.php?route=product/product\&product\_id=62}
+
+\end{thebibliography}
+
+\end{document}
